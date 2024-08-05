@@ -23,7 +23,8 @@ To get started with PinVault, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/PinVault.git
+git clone https://github.com/yourusername/PinVault.git
+
 2. **Navigate to the Project Directory**:
 ```bash
 cd PinVault
