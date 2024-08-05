@@ -1,0 +1,42 @@
+<!-- views/showPosts.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Posts</title>
+    <link rel="stylesheet" href="/stylesheets/show.css">
+</head>
+
+<body>
+    <nav><a href="/profile">Home</a></nav>
+    <h1>All Posts</h1>
+    <div class="posts-container">
+        <% user.posts.forEach(posts=> { %>
+            <div class="post-card">
+                <img src="/images/uploads/<%= posts.image %>" alt="<%= posts.title %>" class="post-image">
+                <div class="post-content">
+                    <h2>
+                        <%= posts.title %>
+                    </h2>
+                    <p>
+                        <%= posts.description %>
+                    </p>
+                </div>
+            </div>
+            <% }); %>
+    </div>
+    <script>
+        const navElement = document.getElementsByTagName('nav')[0];
+        navElement.addEventListener('click', function () {
+            const linkElement = document.getElementsByTagName('a')[0];
+            if (linkElement) {
+                linkElement.click();
+            }
+        });
+
+    </script>
+</body>
+
+</html>

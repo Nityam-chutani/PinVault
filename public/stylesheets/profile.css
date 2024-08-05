@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: rgba(0, 0, 0, 0.689);
+  color: whitesmoke;
+}
+#nav-right>p>a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+#nav-right>p>button:hover{
+    background-color: rgba(255, 0, 0, 0.525);
+    transition: ease-in-out 0.2s;
+}
+#profile-image{
+    height: 25vh;
+    width: 11vw;
+    background-color: aliceblue;
+    border-radius: 69%;
+}
+#profile-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.4;
+    padding-top: 4%;
+}
+#profile-container>p{
+    font-size: 75%;
+    font-weight: 100;
+}
+#profile-container>h3{
+    font-size: 140%;
+}
+#edit{
+    padding: 4px 28px;
+    border-radius: 32px;
+    font-size: 77%;
+    color: whitesmoke;
+    font-weight: 500;
+    background-color: grey;
+    border-color: rgba(128, 128, 128, 0);
+    box-shadow: none;
+    margin-top: 1.5%;
+    cursor: pointer;
+    /* padding-bottom: 0%; */
+}
+#edit:hover{
+    background-color: rgba(128, 128, 128, 0.347);
+    transition: ease-in-out 0.5s;
+}
+#newpost{
+    margin-top: 3%;
+    padding: 4px 28px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: red;
+    border-color:rgba(128, 128, 128, 0);
+    cursor: pointer;
+}
+#newpost:hover{
+    background-color: rgba(255, 0, 0, 0.525);
+    transition: ease-in-out 0.2s;
+}
+#profile-image>img{
+    height: 25vh;
+    width: 11vw;
+    /* background-color: aliceblue; */
+    border-radius: 69%;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+    top: 0%;
+}
+#iconControl{
+    height: 21%;
+    width: 22%;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    position:relative;
+    top: -31%;
+    left: 81%;
+}
+#iconControl>i{
+    position: absolute;
+    font-size: 18.5px; 
+    color: black;
+    left: 16%;
+    top: 7%;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5%;
+}
+#nav-right{
+    display: flex;
+    padding-right: 4%;
+}
+#nav-right>p{
+    padding-right: 10%;
+}
+#nav-right>p>button{
+    padding: 1px 7px;
+    border-radius: 7px;
+    background-color: red;
+    color: whitesmoke;
+    border-color: rgba(128, 128, 128, 0);
+    cursor: pointer;
+}
+#Pin{
+    padding-left: 1.7%;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav>
+    <div id="Pin">PinVault</div>
+    <div id="nav-right">
+      <p><a href="/show/posts">Posts</a></p>
+      <p><a href="/feed">Feed</a></p>
+      <p><button>Logout</button></p>
+      <form action="/logout" method="get" hidden></form>
+    </div>
+  </nav>
+  <div id="div-profile-control">
+      <div id="profile-container">
+          <form action="/fileupload" hidden id="form-submit" method="post" enctype="multipart/form-data">
+              <input type="file" name="image" id="fileinput">
+          </form>
+          <div id="profile-image">
+              <img src="/images/uploads/<%= user.profileImage %>" alt="">
+              <div id="iconControl"><i id="icon" class="ri-pencil-line"></i></div>
+          </div>
+          <h3><%= user.username %></h3>
+          <!-- <p></p> -->
+          <button id="edit">Edit</button>
+          <button id="newpost">Add New Post</button>
+      </div>
+      <form action="/add" method="get" hidden id="addNewPost"></form>
+  </div>
+  <script>
+      document.querySelector("#iconControl").addEventListener("click", function () {
+         document.querySelector("#fileinput").click();
+      })
+      document.querySelector("#edit").addEventListener("click", function () {
+         document.querySelector("#fileinput").click();
+      })
+      document.querySelector("#fileinput").addEventListener("change", function () {
+         document.querySelector("#form-submit").submit();
+      })
+      document.querySelector("#nav-right>p>button").addEventListener("click", function () {
+          document.querySelector("#nav-right>form").submit();
+      })
+      document.querySelector("#newpost").addEventListener("click", function () {
+          document.querySelector("#addNewPost").submit();
+      })
+  </script>
+</body>
+
+</html>

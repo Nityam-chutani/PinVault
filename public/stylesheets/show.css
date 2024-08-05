@@ -1,0 +1,67 @@
+/* public/stylesheets/showPosts.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.886);
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: whitesmoke;
+}
+
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+    padding: 0 20px;
+}
+
+.post-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    height: 0%;
+}
+
+.post-image {
+    height: 38vh;
+    width: 24vw;
+    object-fit: cover;
+    background-position: center;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.post-content h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.post-content p {
+    margin: 10px 0;
+}
+
+.post-content small {
+    color: #888;
+}

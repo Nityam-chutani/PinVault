@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.906);
+    color: whitesmoke;
+}
+h3{
+    text-align: center;
+}
+#formcontrol{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#titlecontrol{
+    padding: 4px 28px;
+    border-radius: 7px;
+    height: 6vh;
+    width: 27vw;
+}
+#descriptioncontrol{
+    padding: 4px 28px;
+    border-radius: 7px;
+    height: 6vh;
+    width: 27vw;
+}
+#submit-button{
+    padding: 4px 28px;
+    border-radius: 7px;
+    height: 6vh;
+    width: 27vw;
+    background-color: red;
+    color: whitesmoke;
+}
